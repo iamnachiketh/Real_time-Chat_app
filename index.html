@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Tuts+ Chat Application</title>
+        <meta name="description" content="Tuts+ Chat Application" />
+        <link rel="stylesheet" href="index.css" />
+        <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+        <script defer src="./client.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="menu">
+                <p class="welcome">Welcome, <b></b></p>
+                <p class="logout"><a id="exit" href="javascript:Exit_Window();">Exit Chat</a></p>
+            </div>
+            <div class="chatbox">
+            </div>
+            <form id="send-container" name="message" action="#">
+                <input name="usermsg" type="text" id="usermsg" />
+                <input name="submitmsg" type="submit" id="submitmsg" value="Send" />
+            </form>
+        </div>
+    </body>
+</html>
